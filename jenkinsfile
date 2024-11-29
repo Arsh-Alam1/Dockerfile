@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Copy Jenkinsfile and index.html to /var/www/html using sudo without password prompt
                 sh '''
-                sudo cp -r Jenkinsfile index.html /var/www/html/
+                sudo cp -r jenkinsfile index.html /var/www/html/
                 '''
             }
         }
