@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh '''
                 # Copy the necessary files to the Nginx directory
-                sudo cp -r jenkinsfile index.html /var/www/html/
+                sudo cp -r Jenkinsfile index.html /var/www/html/
                 # Restart Nginx to apply the changes
                 sudo systemctl restart nginx
                 '''
